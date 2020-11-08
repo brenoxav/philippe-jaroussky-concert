@@ -46,12 +46,33 @@ body * {
   display: grid;
 }
 
-.flex-center-y {
+.flex-align-center {
   align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
 }
 
 .flex-column {
   flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.size-120 {
+  width: 120px;
+  height: 120px;
+}
+
+.w-480 {
+  width: 480px;
 }
 
 .max-w-1200 {
@@ -65,6 +86,10 @@ body * {
 }
 
 /* Spacing */
+.p-16 {
+  padding: 16px;
+}
+
 .px-8 {
   padding-left: 8px;
   padding-right: 8px;
@@ -80,13 +105,12 @@ body * {
   padding-bottom: 16px;
 }
 
-.m-8 {
-  margin: 8px;;
+.m-2 {
+  margin: 2px;
 }
 
-.my-8 {
-  margin-top: 8px;
-  margin-bottom: 8px;
+.m-8 {
+  margin: 8px;;
 }
 
 .mx-16 {
@@ -94,15 +118,34 @@ body * {
   margin-right: 16px;
 }
 
+.my-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 .my-16 {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
+.my-32 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.my-64 {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
 .mt-32 {
   margin-top: 32px;
 }
-/* Text Sizing */
+/* Text */
 .font-coco {
   font-family: Cocogoose, Impact, Haettenschweiler, "Arial Narrow Bold";
 }
@@ -123,6 +166,14 @@ body * {
   font-weight: bold;
 }
 
+.italic {
+  font-style: italic;
+}
+
+/* .regular {
+  font-weight: normal;
+} */
+
 .text-size-normal {
   font-size: 1rem;
 }
@@ -137,6 +188,10 @@ body * {
 
 .text-size-h3 {
   font-size: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* Text Color */
@@ -244,9 +299,12 @@ body * {
 
 .program-tile {
   min-width: 150px;
-  /* height: 250px; */
-
   background-color: #0008;
+}
+
+/* FEATURED ARTISTS */
+.artist-image {
+  box-shadow: -8px -8px 0 0 var(--brand-dark);
 }
 
 /* MEDIA QUERIES */
