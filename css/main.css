@@ -178,6 +178,10 @@ body * {
   text-align: center;
 }
 
+.line-higher {
+  line-height: 1.2em;
+}
+
 /* Text Color */
 .text-color-brand {
   color: var(--brand-primary);
