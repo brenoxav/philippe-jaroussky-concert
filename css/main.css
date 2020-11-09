@@ -414,11 +414,11 @@ body * {
   .artists-wrapper {
     grid-template-columns: 1fr;
   }
-  
+
   /* .btn-brand-fill {
     grid-column: 1fr;
   } */
-  
+
   /* MAIN PROGRAM */
   .program-titles-wrapper {
     flex-direction: column;
@@ -436,12 +436,11 @@ body * {
   /* * * * * MEDIA QUERIES - ABOUT PAGE* * * * */
   .albums-wrapper {
     justify-content: center;
-  }  
-  
+  }
+
   .videos-wrapper {
     grid-template-columns: 1fr;
   }
-
 }
 
 /* * * * * ABOUT PAGE * * * * */
@@ -476,15 +475,33 @@ body * {
 }
 
 /* About Videos */
-.videos-wrapper {
-  /* display: grid;
-  grid-template-columns: repeat(2, minmax(368px, 584px));
-  justify-content: center;
-  align-items: center; */
-}
-
 .video-tile {
   width: 584px;
   height: 328px;
-  /* max-height: 328px; */
+}
+
+/* * * * * TICKETS PAGE * * * * */
+/* Tickets Table */
+.tickets-wrapper {
+  width: 100%;
+  border: 8px solid var(--brand-primary);
+  box-shadow: 0 0 16px 0 #0004;
+}
+
+.tickets-wrapper td,
+th {
+  padding: 16px;
+  border: 1px solid var(--brand-light);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tickets-wrapper th {
+  font-weight: bold;
+  background-color: var(--brand-light);
+}
+
+.ticket-price {
+  font-weight: bold;
+  color: var(--brand-primary);
 }

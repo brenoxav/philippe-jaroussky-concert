@@ -53,18 +53,48 @@
                 </a>
             </span>
             <ul class="nav-list d-flex">
-                <li class="nav-item"><a href="about.html" class="nav-link bold">About</a></li>
-                <li class="nav-item"><a href="tickets.html" class="nav-link bold">Tour</a></li>
-                <li class="nav-item"><a href="tickets.html" class="nav-link bold">Sponsor</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link bold">News</a></li>
-                <li class="nav-item"><a href="tickets.html" class="btn-brand text-color-brand">Get Tickets</a></li>
+                <li class="nav-item"><a class="nav-link bold" href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+                <li class="nav-item"><a class="nav-link bold" href="tickets.html" target="_blank" rel="noopener noreferrer">Tour</a></li>
+                <li class="nav-item"><a class="nav-link bold" href="tickets.html" target="_blank" rel="noopener noreferrer">Sponsor</a></li>
+                <li class="nav-item"><a class="nav-link bold" href="about.html" target="_blank" rel="noopener noreferrer">News</a></li>
+                <li class="nav-item"><a class="btn-brand text-color-brand" href="tickets.html" target="_blank" rel="noopener noreferrer">Get Tickets</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="tickets-prices">
-            <h1>Tickets</h1>
+        <section class="tickets-prices py-32 px-16">
+            <h1 class="text-size-h3 text-center bold text-color-dark max-w-1200 my-64 border-bottom-brand">Select Tickets</h1>
+            <!-- <div class="tickets-wrapper"> -->
+            <form action="#" method="post">
+                <table class="tickets-wrapper max-w-1200 my-32 py-32">
+                    <tr>
+                        <th colspan="4">01 july 2021</th>
+                    </tr>
+                    <tr>
+                        <td>Place</td>
+                        <td>Parterre</td>
+                        <td>Gallery 1</td>
+                        <td>Gallery 2</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td class="ticket-price">CHF 110 <br><input class="my-8" type="radio" name="ticket" id="parterre-normal"></td>
+                        <td class="ticket-price">CHF 75 <br><input class="my-8" type="radio" name="ticket" id="gallery-1-normal"></td>
+                        <td class="ticket-price">CHF 50 <br><input class="my-8" type="radio" name="ticket" id="gallery-2-normal"></td>
+                    </tr>
+                    <tr>
+                        <td>Student</td>
+                        <td class="ticket-price">CHF 75 <br><input class="my-8" type="radio" name="ticket" id="parterre-student"></td>
+                        <td class="ticket-price">CHF 50 <br><input class="my-8" type="radio" name="ticket" id="gallery-1-student"></td>
+                        <td class="ticket-price">CHF 30 <br><input class="my-8" type="radio" name="ticket" id="gallery-2-student"></td>
+                    </tr>
+                </table>
+                <div class="d-flex flex-justify-center mt-32">
+                    <a class="btn-brand-fill bold m-32" href="https://billetterie-culture.geneve.ch/selection/event/seat?perfId=10228301955088&productId=10228300817229" target="_blank" rel="noopener noreferrer">BUY TICKETS</a>
+                </div>
+                </form>
+            <!-- </div> -->
     
         </section>
         <section class="tickets-directions">
