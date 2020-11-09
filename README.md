@@ -4,11 +4,18 @@
 
 > A webpage for a *somewhat fictional* concert of the artist Philippe Jaroussky, based on [Cindy Shin's concept](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
+<!-- 
 ![screenshot 1](./images/screenshot-mobile-1.png) ![screenshot 2](./images/screenshot-mobile-2.png)
 ![screenshot 3](./images/screenshot-mobile-3.png) ![screenshot 4](./images/screenshot-mobile-4.png)
 ![screenshot 5](./images/screenshot-full-1.png)
+-->
 
-## This is my first Capstone project for the Microverse program.
+<img src="./images/screenshot-mobile-1.png" width="49%"> <img src="./images/screenshot-mobile-2.png" width="49%">
+<img src="./images/screenshot-mobile-3.png" width="49%"> <img src="./images/screenshot-mobile-4.png" width="49%">
+<img src="./images/screenshot-full-1.png" width="98%">
+
+
+## This is my first Capstone project for the Microverse program
 - It consists of a web page for a concert based on a concept design;
 - It has three pages;
 - It's responsive and has optimized versions for two sizes:
