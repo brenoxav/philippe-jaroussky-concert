@@ -45,27 +45,30 @@
         <g></g>
     </svg>
     <header class="main-header d-flex">
-        <!-- NAVBAR -->
-        <nav class="navbar d-grid max-w-1200 px-16">
+        <!-- NAVBAR START -->
+        <nav class="navbar max-w-1200 px-16">
             <span>
                 <a href="index.html">
                     <span><img class="nav-logo-brand" src="images/logo-brand.svg" alt="brand logo"></span>
                 </a>
             </span>
             <ul class="nav-list d-flex">
-                <li class="nav-item"><a class="nav-link bold" href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
-                <li class="nav-item"><a class="nav-link bold" href="tickets.html" target="_blank" rel="noopener noreferrer">Tour</a></li>
-                <li class="nav-item"><a class="nav-link bold" href="tickets.html" target="_blank" rel="noopener noreferrer">Sponsor</a></li>
-                <li class="nav-item"><a class="nav-link bold" href="about.html" target="_blank" rel="noopener noreferrer">News</a></li>
-                <li class="nav-item"><a class="btn-brand text-color-brand" href="tickets.html" target="_blank" rel="noopener noreferrer">Get Tickets</a></li>
+                <li class="nav-item"><a class="nav-link bold" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link bold" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link bold" href="#partners">Sponsor</a></li>
+                <li class="nav-item"><a class="nav-link bold" href="http://www.philippejaroussky.fr/" target="_blank"
+                        rel="noopener noreferrer">News</a></li>
+                <li class="nav-item"><a class="btn-brand text-color-brand" href="tickets.html">Get Tickets</a></li>
             </ul>
         </nav>
+        <!-- NAVBAR END -->
     </header>
 
     <main>
+        <!-- TICKETS START -->
         <section class="tickets-prices py-32 px-16">
-            <h1 class="text-size-h3 text-center bold text-color-dark max-w-1200 my-64 border-bottom-brand">Select Tickets</h1>
-            <!-- <div class="tickets-wrapper"> -->
+            <h1 class="text-size-h3 text-center bold text-color-dark max-w-1200 my-64 border-bottom-brand">Select
+                Tickets</h1>
             <form action="#" method="post">
                 <table class="tickets-wrapper max-w-1200 my-32 py-32">
                     <tr>
@@ -78,37 +81,53 @@
                         <td>Gallery 2</td>
                     </tr>
                     <tr>
-                        <td>Normal</td>
-                        <td class="ticket-price">CHF 110 <br><input class="my-8" type="radio" name="ticket" id="parterre-normal"></td>
-                        <td class="ticket-price">CHF 75 <br><input class="my-8" type="radio" name="ticket" id="gallery-1-normal"></td>
-                        <td class="ticket-price">CHF 50 <br><input class="my-8" type="radio" name="ticket" id="gallery-2-normal"></td>
+                        <td class="italic">Normal</td>
+                        <td class="ticket-price">CHF 110 <br><input class="my-8" type="radio" name="ticket"
+                                id="parterre-normal"></td>
+                        <td class="ticket-price">CHF 75 <br><input class="my-8" type="radio" name="ticket"
+                                id="gallery-1-normal"></td>
+                        <td class="ticket-price">CHF 50 <br><input class="my-8" type="radio" name="ticket"
+                                id="gallery-2-normal"></td>
                     </tr>
                     <tr>
-                        <td>Student</td>
-                        <td class="ticket-price">CHF 75 <br><input class="my-8" type="radio" name="ticket" id="parterre-student"></td>
-                        <td class="ticket-price">CHF 50 <br><input class="my-8" type="radio" name="ticket" id="gallery-1-student"></td>
-                        <td class="ticket-price">CHF 30 <br><input class="my-8" type="radio" name="ticket" id="gallery-2-student"></td>
+                        <td class="italic">Student</td>
+                        <td class="ticket-price">CHF 75 <br><input class="my-8" type="radio" name="ticket"
+                                id="parterre-student"></td>
+                        <td class="ticket-price">CHF 50 <br><input class="my-8" type="radio" name="ticket"
+                                id="gallery-1-student"></td>
+                        <td class="ticket-price">CHF 30 <br><input class="my-8" type="radio" name="ticket"
+                                id="gallery-2-student"></td>
                     </tr>
                 </table>
                 <div class="d-flex flex-justify-center mt-32">
-                    <a class="btn-brand-fill bold m-32" href="https://billetterie-culture.geneve.ch/selection/event/seat?perfId=10228301955088&productId=10228300817229" target="_blank" rel="noopener noreferrer">BUY TICKETS</a>
+                    <a class="btn-brand-fill bold m-32"
+                        href="https://billetterie-culture.geneve.ch/selection/event/seat?perfId=10228301955088&productId=10228300817229"
+                        target="_blank" rel="noopener noreferrer">BUY TICKETS</a>
                 </div>
-                </form>
-            <!-- </div> -->
-    
+            </form>
         </section>
-        <section class="tickets-directions">
-    
+        <!-- TICKETS END -->
+
+        <!-- PARTNERS START -->
+        <section class="partners py-32 min-h-200">
+            <h2 id="partners"
+                class="text-size-h3 text-center text-color-dark bold max-w-1200 my-32 border-bottom-brand">Partners</h2>
+            <div class="partners-wrapper d-flex flex-justify-between flex-align-center wrap max-w-1200 px-16">
+                <img class="partner-logo m-32" src="images/logo-scenes-culturelles.png" alt="scenes culturelles logo">
+                <img class="partner-logo m-32" src="images/logo-warner-classics.png" alt="logo warner classics">
+                <img class="partner-logo m-32" src="images/logo-erato.png" alt="logo erato">
+            </div>
         </section>
+        <!-- PARTNERS END -->
     </main>
 
     <!-- FOOTER START -->
     <footer class="footer">
-        <div class="footer-wrapper d-flex flex-align-center max-w-1200 min-h-200 py-32 px-16">
-            <img class="footer-logo m-32" src="images/logo-brand.svg" alt="logo violin">
-            <div class="footer-text-wrapper">
-                <p>2020 Violin Concerts. Some Rights Reserved</p>
-                <p>The contents of this page are partialy fictional.</p>
+        <div class="footer-wrapper d-flex flex-align-center max-w-1200 min-h-200 px-16">
+            <img class="footer-logo" src="images/logo-brand-light.svg" alt="logo violin">
+            <div class="footer-text-wrapper ml-32">
+                <p class="text-color-light">2020 Violin Concerts. Some Rights Reserved</p>
+                <p class="text-color-light">The contents of this page are partialy fictional.</p>
             </div>
         </div>
     </footer>

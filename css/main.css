@@ -45,10 +45,6 @@ body * {
   display: block;
 }
 
-.d-grid {
-  display: grid;
-}
-
 .d-flex {
   display: flex;
 }
@@ -78,23 +74,8 @@ body * {
 }
 
 /* Element Sizing */
-.size-120 {
-  width: 120px;
-  height: 120px;
-}
-
-.w-480 {
-  width: 480px;
-}
-
 .min-h-200 {
   min-height: 200px;
-}
-
-.max-w-1000 {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .max-w-1200 {
@@ -112,19 +93,9 @@ body * {
   padding: 32px;
 }
 
-.px-8 {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
 .px-16 {
   padding-left: 16px;
   padding-right: 16px;
-}
-
-.py-16 {
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .py-32 {
@@ -144,19 +115,9 @@ body * {
   margin: 32px;
 }
 
-.mx-16 {
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
 .my-8 {
   margin-top: 8px;
   margin-bottom: 8px;
-}
-
-.my-16 {
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 .my-32 {
@@ -169,12 +130,12 @@ body * {
   margin-bottom: 64px;
 }
 
-.mb-16 {
-  margin-bottom: 16px;
-}
-
 .ml-16 {
   margin-left: 16px;
+}
+
+.ml-32 {
+  margin-left: 32px;
 }
 
 .mt-32 {
@@ -182,10 +143,6 @@ body * {
 }
 
 /* Text Sizing & Styling*/
-.text-size-normal {
-  font-size: 1rem;
-}
-
 .text-size-h1 {
   font-size: 3.5rem;
   line-height: 1.2em;
@@ -283,7 +240,6 @@ body * {
 }
 
 .btn-brand-fill:hover {
-  /* border: 2px solid var(--brand-dark); */
   color: var(--brand-dark);
   background-color: var(--brand-primary);
 }
@@ -298,6 +254,7 @@ body * {
 }
 
 .navbar {
+  display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: space-between;
   align-items: center;
@@ -331,7 +288,7 @@ body * {
 /* HOME */
 .main-home {
   height: 100vh;
-  background-image: url(../images/bg-main-1.png);
+  background-image: url(../images/bg-main.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
@@ -341,7 +298,6 @@ body * {
   max-width: 480px;
   margin: 16px 0;
   line-height: 1.2rem;
-  /* border: 4px solid #fff; */
   border-radius: 4px;
   background-color: #fff8;
 }
@@ -365,22 +321,23 @@ body * {
 }
 
 .artist-image {
+  width: 120px;
+  height: 120px;
   box-shadow: -8px -8px 0 0 var(--brand-dark);
 }
 
 /* PARTNERS */
 .partners {
-  background-color: var(--brand-dark);
+  background-color: var(--brand-light);
 }
 
 .partner-logo {
-  width: auto;
-  height: 100px;
+  filter: brightness(0) opacity(100%);
 }
 
 /* FOOTER */
 .footer {
-  background-color: var(--brand-light);
+  background-color: var(--brand-dark);
 }
 
 .footer-logo {
@@ -388,65 +345,11 @@ body * {
   height: 50px;
 }
 
-/* MEDIA QUERIES */
-@media only screen and (max-width: 767px) {
-  .text-size-h1 {
-    font-size: 2.5rem;
-  }
-
-  .main-header {
-    display: none;
-  }
-
-  .nav-logo-menu {
-    display: block;
-  }
-
-  .nav-list {
-    display: none;
-  }
-
-  .nav-logo-menu {
-    display: block;
-  }
-
-  /* FEATURED ARTISTS */
-  .artists-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  /* .btn-brand-fill {
-    grid-column: 1fr;
-  } */
-
-  /* MAIN PROGRAM */
-  .program-titles-wrapper {
-    flex-direction: column;
-  }
-
-  .program-tile {
-    display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 32px;
-  }
-
-  /* * * * * MEDIA QUERIES - ABOUT PAGE* * * * */
-  .albums-wrapper {
-    justify-content: center;
-  }
-
-  .videos-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* * * * * ABOUT PAGE * * * * */
+/* * * * * ABOUT PAGE START * * * * */
 /* About Artist */
 .about-artist {
-  background-image: url("../images/bg-philippe-jaroussky-2a.jpg");
+  min-height: 100vh;
+  background-image: url("../images/bg-about.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
@@ -479,8 +382,9 @@ body * {
   width: 584px;
   height: 328px;
 }
+/* * * * * ABOUT PAGE END * * * * */
 
-/* * * * * TICKETS PAGE * * * * */
+/* * * * * TICKETS PAGE START * * * * */
 /* Tickets Table */
 .tickets-wrapper {
   width: 100%;
@@ -505,3 +409,56 @@ th {
   font-weight: bold;
   color: var(--brand-primary);
 }
+/* * * * * TICKETS PAGE END * * * * */
+
+/* * * * * MEDIA QUERIES START * * * * */
+@media only screen and (max-width: 767px) {
+  .text-size-h1 {
+    font-size: 2.5rem;
+  }
+  /* HEADER & NAVBAR */
+  .main-header {
+    display: none;
+  }
+
+  .nav-logo-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-logo-menu {
+    display: block;
+  }
+
+  /* FEATURED ARTISTS */
+  .artists-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* MAIN PROGRAM */
+  .program-titles-wrapper {
+    flex-direction: column;
+  }
+
+  .program-tile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 32px;
+  }
+
+  /* ABOUT PAGE */
+  .albums-wrapper {
+    justify-content: center;
+  }
+
+  .videos-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+/* * * * * MEDIA QUERIES END * * * * */
