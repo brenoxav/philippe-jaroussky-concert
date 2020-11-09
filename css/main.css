@@ -108,6 +108,10 @@ body * {
   padding: 16px;
 }
 
+.p-32 {
+  padding: 32px;
+}
+
 .px-8 {
   padding-left: 8px;
   padding-right: 8px;
@@ -163,6 +167,10 @@ body * {
 .my-64 {
   margin-top: 64px;
   margin-bottom: 64px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
 }
 
 .ml-16 {
@@ -255,6 +263,7 @@ body * {
 .btn-brand {
   padding: 8px 12px;
   border: 2px solid var(--brand-primary);
+  font-weight: bold;
   border-radius: 4px;
   color: var(--brand-primary);
 }
@@ -424,7 +433,11 @@ body * {
     padding: 32px;
   }
 
-  /* MEDIA QUERIES - ABOUT PAGE */
+  /* * * * * MEDIA QUERIES - ABOUT PAGE* * * * */
+  .albums-wrapper {
+    justify-content: center;
+  }  
+  
   .videos-wrapper {
     grid-template-columns: 1fr;
   }
@@ -432,23 +445,46 @@ body * {
 }
 
 /* * * * * ABOUT PAGE * * * * */
-/* About Albums */
-.album {
-
+/* About Artist */
+.about-artist {
+  background-image: url("../images/bg-philippe-jaroussky-2a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
 }
 
+.about-artist-wrapper {
+  background-color: #fff8;
+}
+
+.about-artist-text {
+  line-height: 1.2em;
+}
+
+/* About Albums */
+.about-albums {
+  background-color: var(--brand-light);
+}
+
+.album-tile {
+  position: relative;
+}
+
+.album-image {
+  width: 300px;
+  height: 300px;
+}
 
 /* About Videos */
 .videos-wrapper {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, minmax(368px, 584px));
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
-.video {
-  width: 100%;
-  max-width: 584px;
-  height: 330px;
+.video-tile {
+  width: 584px;
+  height: 328px;
   /* max-height: 328px; */
 }
