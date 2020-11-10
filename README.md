@@ -41,13 +41,15 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Cindy Shin](https://www.behance.net/adagio07) for the concept design;
-- [Philippe Jaroussky](http://www.philippejaroussky.fr/): The artist who served as inspiration for this project's theme;
-- I've made use of resources from:
-    - [Zeta Fonts](http://www.zetafonts.com/cocogoose) (typography)
-    - [Lato Fonts](https://www.latofonts.com/) (typography)
-    - [Free Vector](https://www.freevector.com/) (icons)
-    - [flaticon](https://www.flaticon.com/) (icons)
+- [Cindy Shin](https://www.behance.net/adagio07) for the concept design.
+- [Philippe Jaroussky](http://www.philippejaroussky.fr/): The artist who served as inspiration for this project's theme.
+
+> I've made use of resources from:
+
+- [Zeta Fonts](http://www.zetafonts.com/cocogoose) (typography)
+- [Lato Fonts](https://www.latofonts.com/) (typography)
+- [Free Vector](https://www.freevector.com/) (icons)
+- [flaticon](https://www.flaticon.com/) (icons)
 
 ## 📝 License
 
