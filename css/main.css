@@ -1,0 +1,477 @@
+/* FONT IMPORT AND SETUP */
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/Cocogoose/Cocogoose-Pro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cocogoose-Light";
+  src: url("../fonts/Cocogoose/Cocogoose-Pro-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+.font-coco {
+  font-family: Cocogoose, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.font-coco-light {
+  font-family: Cocogoose-Light, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* VARIABLES */
+:root {
+  --brand-primary: #ec5242;
+  --brand-dark: #272a31;
+  --brand-light: #d3d3d3;
+}
+
+/* GLOBAL RULES */
+body {
+  min-width: 360px;
+}
+
+body * {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: var(--brand-dark);
+}
+
+/* GENERAL CLASSES */
+
+/* Display & Positioning */
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* Element Sizing */
+.min-h-200 {
+  min-height: 200px;
+}
+
+.max-w-1200 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Element Spacing */
+.p-16 {
+  padding: 16px;
+}
+
+.p-32 {
+  padding: 32px;
+}
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.m-2 {
+  margin: 2px;
+}
+
+.m-8 {
+  margin: 8px;
+}
+
+.m-32 {
+  margin: 32px;
+}
+
+.my-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.my-32 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.my-64 {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+/* Text Sizing & Styling */
+.text-size-h1 {
+  font-size: 3.5rem;
+  line-height: 1.2em;
+}
+
+.text-size-h2 {
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+
+.text-size-h3 {
+  font-size: 1.5rem;
+  line-height: 1.2em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.line-higher {
+  line-height: 1.2em;
+}
+
+/* Text Color */
+.text-color-brand {
+  color: var(--brand-primary);
+}
+
+.text-color-dark {
+  color: var(--brand-dark);
+}
+
+.text-color-light {
+  color: var(--brand-light);
+}
+
+.text-color-white {
+  color: #fff;
+}
+
+.text-blend {
+  color: #f00;
+  mix-blend-mode: screen;
+}
+
+/* Brand Underline */
+.border-bottom-brand {
+  position: relative;
+}
+
+.border-bottom-brand::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 2px;
+  background: var(--brand-primary);
+}
+
+/* Buttons */
+.btn-brand {
+  padding: 8px 12px;
+  border: 2px solid var(--brand-primary);
+  font-weight: bold;
+  border-radius: 4px;
+  color: var(--brand-primary);
+}
+
+.btn-brand:hover {
+  color: #fff;
+  background-color: var(--brand-primary);
+}
+
+.btn-brand-fill {
+  display: inline-block;
+  padding: 32px 32px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--brand-primary);
+}
+
+.btn-brand-fill:hover {
+  color: var(--brand-dark);
+  background-color: var(--brand-primary);
+}
+
+/* MAIN HEADER & NAVBAR */
+.main-header {
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  box-shadow: 0 4px 4px 0 #4442;
+  background-color: #fff;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-brand {
+  width: auto;
+  height: 60px;
+  fill: var(--brand-dark);
+}
+
+.nav-logo-menu {
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 32px;
+  height: 32px;
+  fill: var(--brand-primary);
+}
+
+.nav-list {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: var(--brand-primary);
+}
+
+/* HOME */
+.main-home {
+  height: 100vh;
+  background-image: url(../images/bg-main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.main-description {
+  max-width: 480px;
+  margin: 16px 0;
+  line-height: 1.2rem;
+  border-radius: 4px;
+  background-color: #fff8;
+}
+
+/* MAIN PROGRAM */
+.main-program {
+  background-color: var(--brand-dark);
+}
+
+.program-tile {
+  min-width: 150px;
+  background-color: #fff2;
+}
+
+/* FEATURED ARTISTS */
+.artists-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(368px, 584px));
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-image {
+  width: 120px;
+  height: 120px;
+  box-shadow: -8px -8px 0 0 var(--brand-dark);
+}
+
+/* PARTNERS */
+.partners {
+  background-color: var(--brand-dark);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--brand-light);
+}
+
+.footer-logo {
+  width: auto;
+  height: 50px;
+}
+
+/* * * * * ABOUT PAGE START * * * * */
+
+/* About Artist */
+.about-artist {
+  min-height: 100vh;
+  background-image: url("../images/bg-about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.about-artist-wrapper {
+  background-color: #fff8;
+}
+
+.about-artist-text {
+  line-height: 1.2em;
+}
+
+/* About Albums */
+.about-albums {
+  background-color: var(--brand-light);
+}
+
+.album-tile {
+  position: relative;
+}
+
+.album-image {
+  width: 300px;
+  height: 300px;
+}
+
+/* About Videos */
+.video-tile {
+  width: 584px;
+  height: 328px;
+}
+
+/* * * * * ABOUT PAGE END * * * * */
+
+/* * * * * TICKETS PAGE START * * * * */
+
+/* Tickets Table */
+.tickets-wrapper {
+  width: 100%;
+  border: 8px solid var(--brand-primary);
+  box-shadow: 0 0 16px 0 #0004;
+}
+
+.tickets-wrapper td,
+th {
+  padding: 16px;
+  border: 1px solid var(--brand-light);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tickets-wrapper th {
+  font-weight: bold;
+  background-color: var(--brand-light);
+}
+
+.ticket-price {
+  font-weight: bold;
+  color: var(--brand-primary);
+}
+
+/* * * * * TICKETS PAGE END * * * * */
+
+/* * * * * MEDIA QUERIES START * * * * */
+@media only screen and (max-width: 767px) {
+  .text-size-h1 {
+    font-size: 2.5rem;
+  }
+
+  /* HEADER & NAVBAR */
+  .main-header {
+    display: none;
+  }
+
+  .nav-logo-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  /* FEATURED ARTISTS */
+  .artists-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* MAIN PROGRAM */
+  .program-titles-wrapper {
+    flex-direction: column;
+  }
+
+  .program-tile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 32px;
+  }
+
+  /* ABOUT PAGE */
+  .albums-wrapper {
+    justify-content: center;
+  }
+
+  .videos-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-text-wrapper {
+    margin: 0;
+    padding: 16px;
+  }
+}
+
+/* * * * * MEDIA QUERIES END * * * * */
