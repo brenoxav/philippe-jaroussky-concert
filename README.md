@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Philippe Jaroussky's Concert Webpage
 
 > A webpage for a *somewhat fictional* concert of the artist [Philippe Jaroussky](http://www.philippejaroussky.fr/), based on [Cindy Shin's concept](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
@@ -15,7 +15,7 @@
 - It's responsive and has optimized versions for two sizes:
     - mobile: up to 768px;
     - desktop: from 768px;
-- It folows the colors, typographies and layout of the given design.
+- It follows the colors, typographies and layout of the given design.
 
 ## Built With
 
