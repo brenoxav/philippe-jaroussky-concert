@@ -333,16 +333,12 @@ body * {
 
 /* PARTNERS */
 .partners {
-  background-color: var(--brand-light);
-}
-
-.partner-logo {
-  filter: brightness(0) opacity(100%);
+  background-color: var(--brand-dark);
 }
 
 /* FOOTER */
 .footer {
-  background-color: var(--brand-dark);
+  background-color: var(--brand-light);
 }
 
 .footer-logo {
@@ -465,6 +461,16 @@ th {
 
   .videos-wrapper {
     grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-text-wrapper {
+    margin: 0;
+    padding: 16px;
   }
 }
 
