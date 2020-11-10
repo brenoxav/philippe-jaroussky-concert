@@ -2,7 +2,7 @@
 
 # Philippe Jaroussky's Concert Webpage
 
-> A webpage for a *somewhat fictional* concert of the artist [Philippe Jaroussky](http://www.philippejaroussky.fr/), based on [Cindy Shin's concept](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
+> A webpage for a *somewhat fictional* concert of the artist [Philippe Jaroussky](http://www.philippejaroussky.fr/). Based on [Cindy Shin's concept](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 <img src="./images/screenshot-mobile-1.png" width="49%"> <img src="./images/screenshot-mobile-2.png" width="49%">
 <img src="./images/screenshot-mobile-3.png" width="49%"> <img src="./images/screenshot-mobile-4.png" width="49%">
@@ -10,12 +10,13 @@
 
 
 ## This is my first Capstone project for the Microverse program
-- It consists of a web page for a concert based on a concept design;
+- It consists of a web page for a concert;
+- It's based on a given concept design;
 - It has three pages;
-- It's responsive and has optimized versions for two sizes:
+- It's responsive and has optimized versions for different screen sizes:
     - mobile: up to 768px;
     - desktop: from 768px;
-- It follows the colors, typographies and layout of the given design.
+- It follows the colors, typographies, and layout of the given design.
 
 ## Built With
 
@@ -40,8 +41,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Cindy Shin](https://www.behance.net/adagio07) for the design project;
-- [Philippe Jaroussky](http://www.philippejaroussky.fr/): The artist who served as inpiration for this project's theme;
+- [Cindy Shin](https://www.behance.net/adagio07) for the concept design;
+- [Philippe Jaroussky](http://www.philippejaroussky.fr/): The artist who served as inspiration for this project's theme;
 - I've made use of resources from:
     - [Zeta Fonts](http://www.zetafonts.com/cocogoose) (typography)
     - [Lato Fonts](https://www.latofonts.com/) (typography)
