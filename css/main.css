@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Cocogoose-Light";
-  src: url("../fonts/Cocogoose/Cocogoose-Pro-Light.ttf");
+  src: url("../fonts/Cocogoose/Cocogoose-Pro-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -15,11 +15,11 @@
 }
 
 .font-coco {
-  font-family: Cocogoose, Impact, Haettenschweiler, "Arial Narrow Bold";
+  font-family: Cocogoose, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .font-coco-light {
-  font-family: Cocogoose-Light, Impact, Haettenschweiler, "Arial Narrow Bold";
+  font-family: Cocogoose-Light, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 /* VARIABLES */
@@ -40,6 +40,7 @@ body * {
 }
 
 /* GENERAL CLASSES */
+
 /* Display & Positioning */
 .d-block {
   display: block;
@@ -142,7 +143,7 @@ body * {
   margin-top: 32px;
 }
 
-/* Text Sizing & Styling*/
+/* Text Sizing & Styling */
 .text-size-h1 {
   font-size: 3.5rem;
   line-height: 1.2em;
@@ -350,6 +351,7 @@ body * {
 }
 
 /* * * * * ABOUT PAGE START * * * * */
+
 /* About Artist */
 .about-artist {
   min-height: 100vh;
@@ -386,9 +388,11 @@ body * {
   width: 584px;
   height: 328px;
 }
+
 /* * * * * ABOUT PAGE END * * * * */
 
 /* * * * * TICKETS PAGE START * * * * */
+
 /* Tickets Table */
 .tickets-wrapper {
   width: 100%;
@@ -413,6 +417,7 @@ th {
   font-weight: bold;
   color: var(--brand-primary);
 }
+
 /* * * * * TICKETS PAGE END * * * * */
 
 /* * * * * MEDIA QUERIES START * * * * */
@@ -420,6 +425,7 @@ th {
   .text-size-h1 {
     font-size: 2.5rem;
   }
+
   /* HEADER & NAVBAR */
   .main-header {
     display: none;
@@ -431,10 +437,6 @@ th {
 
   .nav-list {
     display: none;
-  }
-
-  .nav-logo-menu {
-    display: block;
   }
 
   /* FEATURED ARTISTS */
@@ -465,4 +467,5 @@ th {
     grid-template-columns: 1fr;
   }
 }
+
 /* * * * * MEDIA QUERIES END * * * * */
